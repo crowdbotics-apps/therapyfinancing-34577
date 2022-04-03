@@ -24,7 +24,11 @@ class User(AbstractUser):
         max_length=255,
     )
     clint = models.EmailField(
+        null=True,
+        blank=True,
         max_length=254,
+    )
+    comhabW = models.IntegerField(
         null=True,
         blank=True,
     )
